@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Github as GitHub, Linkedin, Mail, FileText } from "lucide-react";
 import profilePic from "../image/profilepic.png";
+import pdf from "../image/Arunkumar.pdf"
 
 const HeroSection: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -226,7 +227,7 @@ const HeroSection: React.FC = () => {
       href: "mailto:arunmichael2002@email.com",
     },
     { name: "Resume", icon: <FileText className="h-5 w-5" />,
-      href: "/src/image/Arunkumar.pdf", // path to your PDF file
+      href: `${pdf}`, // path to your PDF file
       target: "_blank",        },
   ];
 
